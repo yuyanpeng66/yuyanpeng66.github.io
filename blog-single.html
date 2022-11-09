@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>抖音：彭于晏山东分晏</title>
+    <title> 彭于晏山东分晏</title>
     <script src="js/jquery.min.js"></script>
   </head>
   <style>
@@ -11,7 +11,7 @@
     }
     html,
     body {
-      height: 100%;
+      height: 95%;
       padding: 0;
       margin: 0;
       background: #000;
@@ -31,8 +31,8 @@
     canvas {
       z-index: 99;
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
     }
   </style>
   <body>
@@ -45,8 +45,24 @@
       <!-- 爱心 -->
       <canvas id="pinkboard" class="container"> </canvas>
     </div>
- 
+
+ <div><p id="fftwo" align="right">                 Send my love to you in my way❤❤❤</p></div>
+ </br>
+ <div><p id="ffthree" align="right"> By彭于晏山东分晏(抖音)</p></div>
+  <div><p id="fffour" align="right">                 源码和版本2在公众号：SCI科研者之家</p></div>
+ <script>
+    var tt = document.getElementById('fftwo').style
+    tt.color='pink'
+    tt.fontSize="20px"
+     var ts = document.getElementById('ffthree').style
+     ts.color='pink'
+     ts.fontSize="10px"
+     var tf= document.getElementById('fffour').style
+     tf.color='blue'
+     tf.fontSize="10px"
+ </script>
   </body>
+  
 </html>
 <script>
     /*
@@ -326,7 +342,7 @@ context.closePath();
       }, 10);
     })(document.getElementById("pinkboard"));
   </script>
- 
+
   <script>
     var RENDERER = {
       INIT_CHERRY_BLOSSOM_COUNT: 30,
@@ -380,6 +396,7 @@ re
         );
       },
     };
+    
     $(function () {
       RENDERER.init();
     });
